@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:background="@color/cardview_dark_background"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".StartRecordFragment">
+
+    <Chronometer
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="89dp" android:id="@+id/record_timer"/>
+
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            app:cornerRadius="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#FD009688"
+            app:icon="@drawable/ic_baseline_start_btn"
+            app:iconSize="60dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:iconPadding="0dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:id="@+id/recordButton" app:backgroundTint="#FD009688"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintTop_toBottomOf="@+id/record_timer" android:layout_marginTop="104dp"/>
+    <TextView
+            android:text="Click button to record!"
+            android:layout_width="223dp"
+            android:layout_height="229dp" android:id="@+id/page_descrp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="18sp" app:lineHeight="26dp"
+            android:textColor="@color/white"
+            android:textAlignment="center" app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/recordButton"
+            app:layout_constraintVertical_bias="0.306"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
